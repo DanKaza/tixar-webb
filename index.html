@@ -3,54 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TIXAR — ekstrakurikuler pemrograman untuk siswa yang ingin membuat produk digital nyata.">
-  <title>TIXAR — Build something real</title>
+  <meta name="description" content="TIXAR adalah ekstrakurikuler pemrograman dan desain digital di SMK Texar.">
+  <title>TIXAR — Technology Innovation Texar</title>
   <link rel="icon" href="public/assets/icons/favicon.ico">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="src/scripts/main.js" defer></script>
 </head>
 <body>
-  <header class="sticky top-0 z-50 border-b border-line/70 bg-canvas/85 backdrop-blur-xl">
-    <nav class="shell flex h-[4.5rem] items-center justify-between py-4" aria-label="Navigasi utama">
-      <a href="#top" class="font-display text-xl font-bold tracking-[-.08em] text-ink">TIXAR<span class="text-signal">.</span></a>
-      <div class="hidden items-center gap-7 md:flex"><a class="nav-link" href="#proyek">Proyek</a><a class="nav-link" href="#jalur">Jalur belajar</a><a class="nav-link" href="#faq">FAQ</a></div>
-      <a class="button button-primary px-4 py-2.5" href="#gabung">Gabung TIXAR <span aria-hidden="true">↗</span></a>
+  <header class="site-header">
+    <nav class="shell site-nav" aria-label="Navigasi utama">
+      <a href="#beranda" class="wordmark">TIXAR<span>.</span></a>
+      <div class="nav-links"><a href="#karya">Karya</a><a href="#belajar">Kegiatan</a><a href="#faq">FAQ</a></div>
+      <a class="nav-cta" href="#gabung">Gabung</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="relative isolate overflow-hidden">
-      <div class="grid-field pointer-events-none absolute inset-0 -z-20"></div><div class="signal-orb pointer-events-none absolute -right-32 top-8 -z-10 h-[34rem] w-[34rem]"></div>
-      <div class="shell grid min-h-[calc(100vh-73px)] items-center gap-12 py-16 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
-        <div>
-          <p class="eyebrow">Technology Innovation Texar</p>
-          <h1 class="mt-5 max-w-3xl font-display text-5xl font-bold leading-[.93] tracking-[-.075em] text-ink sm:text-7xl lg:text-8xl">Bukan cuma belajar.<br><span class="text-signal">Kamu bikin.</span></h1>
-          <p class="mt-7 max-w-xl text-base leading-7 text-muted sm:text-lg">Ruang ekskul untuk siswa yang ingin mengubah rasa penasaran jadi website, aplikasi, dan karya digital yang bisa dipakai orang.</p>
-          <div class="mt-9 flex flex-wrap gap-3"><a class="button button-primary" href="#gabung">Mulai dari sini <span aria-hidden="true">→</span></a><a class="button button-quiet" href="#proyek">Lihat yang kami buat</a></div>
-          <div class="mt-12 flex flex-wrap gap-x-8 gap-y-3 font-mono text-xs text-muted"><span><i class="mr-2 inline-block h-2 w-2 rounded-full bg-signal"></i>untuk pemula</span><span>HTML / CSS / JS / desain</span></div>
-        </div>
-        <div class="relative mx-auto w-full max-w-xl rounded-2xl border border-signal/30 bg-surface/90 p-3 shadow-glow">
-          <div class="flex items-center gap-2 border-b border-line px-3 pb-3 font-mono text-[11px] text-muted"><span class="h-2.5 w-2.5 rounded-full bg-[#ff6b8b]"></span><span class="h-2.5 w-2.5 rounded-full bg-[#ffc46b]"></span><span class="h-2.5 w-2.5 rounded-full bg-signal"></span><span class="ml-2">tixar@lab:~</span></div>
-          <div class="min-h-[280px] p-5 font-mono text-sm leading-8 sm:min-h-[330px] sm:p-7"><p class="text-muted">// tempat ide ketemu eksekusi</p><p class="mt-5"><span class="text-signal">tixar@lab</span><span class="text-muted">:~$</span> <span id="terminal-text"></span><span class="cursor" aria-hidden="true"></span></p><div id="terminal-output" class="mt-4 space-y-1 text-bloom" aria-live="polite"></div></div>
-        </div>
+  <main id="beranda">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="kicker">Ekskul teknologi · SMK Texar</p>
+        <h1>Belajar teknologi lewat <em>karya.</em></h1>
+        <p class="intro">TIXAR adalah ruang setelah kelas untuk mencoba coding, desain, dan kerja tim. Tidak perlu datang sudah jago.</p>
+        <div class="hero-actions"><a class="button button-solid" href="#gabung">Cari tahu cara gabung <span aria-hidden="true">→</span></a><a class="text-link" href="#karya">Lihat karya siswa <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <figure class="hero-figure"><div class="figure-note"><span></span> sesi praktik</div><img src="public/assets/images/hero.svg" alt="Ilustrasi siswa yang bekerja dengan teknologi digital"></figure>
+    </section>
+
+    <section class="statement"><div class="shell statement-grid"><p class="kicker">Yang dikerjakan di TIXAR</p><p>Kami mulai dari dasar, lalu membuat sesuatu yang bisa ditunjukkan. Halaman web, identitas visual, atau alat kecil untuk kebutuhan sekolah.</p></div></section>
+
+    <section id="karya" class="section shell">
+      <div class="section-head"><div><p class="kicker">Arsip karya</p><h2>Dibuat untuk dipakai.</h2></div><p>Proyek latihan terasa lebih berguna saat punya pengguna dan masalah yang jelas.</p></div>
+      <div class="projects">
+        <article class="project project-featured"><div class="project-image"><img src="public/assets/images/perpustakaan.svg" alt="Tampilan proyek Perpustakaan"></div><div class="project-copy"><p>01 — WEB APP</p><h3>Perpustakaan</h3><span>Akses koleksi sekolah, lebih gampang.</span></div></article>
+        <article class="project"><div class="project-image"><img src="public/assets/images/texality.jpg" alt="Tampilan proyek Texality"></div><div class="project-copy"><p>02 — PLATFORM</p><h3>Texality</h3><span>Ruang digital untuk aktivitas sekolah.</span></div></article>
+        <article class="project"><div class="project-image"><img src="public/assets/images/texaslearning.jpg" alt="Tampilan proyek Texaslearning"></div><div class="project-copy"><p>03 — LEARNING</p><h3>Texaslearning</h3><span>Materi sekolah dalam alur yang jelas.</span></div></article>
+        <article class="project"><div class="project-image"><img src="public/assets/images/texasvoice.svg" alt="Tampilan proyek Texasvoice"></div><div class="project-copy"><p>04 — VOTING</p><h3>Texasvoice</h3><span>Suara siswa, dalam satu tempat.</span></div></article>
+        <article class="project"><div class="project-image"><img src="public/assets/images/pilketos.png" alt="Tampilan proyek Pilketos"></div><div class="project-copy"><p>05 — EVENT</p><h3>Pilketos</h3><span>Informasi pemilihan yang mudah dibaca.</span></div></article>
       </div>
     </section>
 
-    <section id="proyek" class="section border-y border-line bg-surface/45"><div class="shell"><div class="flex flex-col justify-between gap-7 md:flex-row md:items-end"><div><p class="eyebrow">Build log / pilihan karya</p><h2 class="section-title">Ide siswa.<br>Produk sungguhan.</h2></div><p class="max-w-sm leading-7 text-muted">Setiap proyek adalah latihan menemukan masalah, menyusun solusi, lalu merilisnya bersama tim.</p></div><div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      <article class="project group"><img src="public/assets/images/perpustakaan.svg" alt="Tampilan proyek Perpustakaan"><div class="p-6"><p class="font-mono text-xs text-signal">WEB APP · HTML/CSS</p><h3 class="mt-3 font-display text-2xl font-bold">Perpustakaan</h3><p class="mt-2 text-sm leading-6 text-muted">Akses koleksi sekolah, lebih gampang.</p></div></article>
-      <article class="project group"><img src="public/assets/images/texality.jpg" alt="Tampilan proyek Texality"><div class="p-6"><p class="font-mono text-xs text-signal">PLATFORM · UI DESIGN</p><h3 class="mt-3 font-display text-2xl font-bold">Texality</h3><p class="mt-2 text-sm leading-6 text-muted">Ruang digital untuk aktivitas sekolah.</p></div></article>
-      <article class="project group"><img src="public/assets/images/texaslearning.jpg" alt="Tampilan proyek Texaslearning"><div class="p-6"><p class="font-mono text-xs text-signal">LEARNING · FRONTEND</p><h3 class="mt-3 font-display text-2xl font-bold">Texaslearning</h3><p class="mt-2 text-sm leading-6 text-muted">Belajar materi sekolah dengan alur jelas.</p></div></article>
-      <article class="project group"><img src="public/assets/images/texasvoice.svg" alt="Tampilan proyek Texasvoice"><div class="p-6"><p class="font-mono text-xs text-signal">VOTING · PRODUCT</p><h3 class="mt-3 font-display text-2xl font-bold">Texasvoice</h3><p class="mt-2 text-sm leading-6 text-muted">Suara siswa, dalam satu tempat.</p></div></article>
-      <article class="project group"><img src="public/assets/images/pilketos.png" alt="Tampilan proyek Pilketos"><div class="p-6"><p class="font-mono text-xs text-signal">EVENT · WEB</p><h3 class="mt-3 font-display text-2xl font-bold">Pilketos</h3><p class="mt-2 text-sm leading-6 text-muted">Informasi pemilihan yang mudah dibaca.</p></div></article>
-      <article class="project group"><img src="public/assets/images/gemar.jpg" alt="Tampilan proyek Gemar"><div class="p-6"><p class="font-mono text-xs text-signal">CAMPAIGN · DESIGN</p><h3 class="mt-3 font-display text-2xl font-bold">Gemar</h3><p class="mt-2 text-sm leading-6 text-muted">Kampanye digital dengan karakter sendiri.</p></div></article>
-    </div></div></section>
+    <section id="belajar" class="section program"><div class="shell"><div class="section-head"><div><p class="kicker">Cara belajar</p><h2>Datang.<br>Coba. Ulangi.</h2></div><p>Tiap pertemuan punya ruang untuk bertanya, mencoba, lalu menerima masukan dari teman.</p></div><div class="program-list"><article><span>01</span><h3>Mulai dari dasar</h3><p>HTML, CSS, JavaScript, dan prinsip desain antarmuka.</p></article><article><span>02</span><h3>Kerjakan bersama</h3><p>Pecahkan brief kecil dengan pembagian peran yang nyata.</p></article><article><span>03</span><h3>Tunjukkan hasilnya</h3><p>Presentasikan karya, dapatkan masukan, perbaiki lagi.</p></article></div></div></section>
 
-    <section id="jalur" class="section"><div class="shell grid gap-12 lg:grid-cols-[.8fr_1.2fr]"><div><p class="eyebrow">Cara bertumbuh</p><h2 class="section-title">Dari “belum bisa” jadi “sudah rilis”.</h2></div><ol class="divide-y divide-line border-y border-line"><li class="grid gap-4 py-7 sm:grid-cols-[8rem_1fr]"><p class="font-mono text-sm text-signal">01 / MULAI</p><div><h3 class="font-display text-2xl font-bold">Pahami fondasi</h3><p class="mt-2 leading-7 text-muted">Kenali HTML, CSS, JavaScript, dan cara desain bekerja untuk web.</p></div></li><li class="grid gap-4 py-7 sm:grid-cols-[8rem_1fr]"><p class="font-mono text-sm text-signal">02 / BANGUN</p><div><h3 class="font-display text-2xl font-bold">Kerjakan bersama</h3><p class="mt-2 leading-7 text-muted">Ubah brief kecil jadi halaman, antarmuka, atau fitur bersama teman.</p></div></li><li class="grid gap-4 py-7 sm:grid-cols-[8rem_1fr]"><p class="font-mono text-sm text-signal">03 / RILIS</p><div><h3 class="font-display text-2xl font-bold">Tunjukkan karya</h3><p class="mt-2 leading-7 text-muted">Rapikan portofolio dan presentasikan hasil di depan komunitas.</p></div></li></ol></div></section>
+    <section id="faq" class="section shell faq-layout"><div><p class="kicker">Pertanyaan awal</p><h2>Yang sering ditanya.</h2></div><div class="faq-list"><div class="faq"><button aria-expanded="false">Harus sudah bisa coding?<span aria-hidden="true">+</span></button><p hidden>Tidak. Materi dimulai dari fondasi dan anggota belajar dengan ritme yang sama-sama dijaga.</p></div><div class="faq"><button aria-expanded="false">TIXAR belajar apa saja?<span aria-hidden="true">+</span></button><p hidden>Pemrograman web, desain antarmuka, dan proses mengembangkan produk digital bersama tim.</p></div><div class="faq"><button aria-expanded="false">Apa yang perlu disiapkan?<span aria-hidden="true">+</span></button><p hidden>Rasa ingin tahu. Detail perangkat dan jadwal bisa ditanyakan langsung ke pengurus TIXAR.</p></div></div></section>
 
-    <section id="faq" class="section border-y border-line bg-surface/45"><div class="shell grid gap-10 lg:grid-cols-[.7fr_1.3fr]"><div><p class="eyebrow">Sebelum mulai</p><h2 class="section-title">Pertanyaan umum.</h2></div><div><div class="faq"><button aria-expanded="false">Apa itu TIXAR?<span class="text-signal" aria-hidden="true">+</span></button><p hidden class="pb-5 leading-7 text-muted">TIXAR adalah ekstrakurikuler Technology Innovation Texar: tempat belajar pemrograman, desain, dan membuat produk digital bersama.</p></div><div class="faq"><button aria-expanded="false">Harus sudah bisa coding?<span class="text-signal" aria-hidden="true">+</span></button><p hidden class="pb-5 leading-7 text-muted">Tidak. Jalur belajar dimulai dari fondasi dan dibangun bertahap bersama anggota lain.</p></div><div class="faq"><button aria-expanded="false">Apa yang perlu dibawa?<span class="text-signal" aria-hidden="true">+</span></button><p hidden class="pb-5 leading-7 text-muted">Bawa rasa ingin tahu. Perangkat dan kebutuhan pertemuan bisa dikonfirmasi lewat pengurus.</p></div></div></div></section>
-
-    <section id="gabung" class="section"><div class="shell"><div class="relative overflow-hidden rounded-3xl border border-signal/35 bg-surface px-6 py-14 text-center shadow-glow sm:px-12 sm:py-20"><div class="signal-orb pointer-events-none absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2"></div><div class="relative"><p class="eyebrow">Next build starts with you</p><h2 class="mx-auto mt-5 max-w-3xl font-display text-5xl font-bold tracking-[-.065em] sm:text-7xl">Punya rasa penasaran?<br><span class="text-signal">Bawa ke sini.</span></h2><p class="mx-auto mt-6 max-w-xl leading-7 text-muted">Mulai perjalananmu membuat sesuatu yang nyata bersama TIXAR.</p><a class="button button-primary mt-9" href="mailto:info@tixar.sch.id?subject=Gabung%20TIXAR">Tanya cara gabung <span aria-hidden="true">→</span></a></div></div></div></section>
+    <section id="gabung" class="join"><div class="shell join-inner"><p class="kicker">Pendaftaran anggota</p><h2>Ada ide yang ingin kamu coba?</h2><p>Temui pengurus TIXAR di sekolah untuk jadwal dan cara pendaftaran.</p><a class="button button-solid" href="#beranda">Kembali ke atas <span aria-hidden="true">↑</span></a></div></section>
   </main>
-  <footer class="border-t border-line py-8"><div class="shell flex flex-col justify-between gap-3 text-sm text-muted sm:flex-row"><p>© TIXAR — Technology Innovation Texar</p><p class="font-mono text-xs">make / learn / share</p></div></footer>
+  <footer><div class="shell"><span class="wordmark">TIXAR<span>.</span></span><p>Technology Innovation Texar</p></div></footer>
 </body>
 </html>
