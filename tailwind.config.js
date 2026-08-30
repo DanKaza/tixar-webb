@@ -13,7 +13,7 @@ module.exports = {
         ice: "hsl(var(--color-ice) / <alpha-value>)"
       },
       fontFamily: {
-        display: ["Syne", "sans-serif"],
+        display: ["Gilroy", "Syne", "sans-serif"],
         sans: ["DM Sans", "sans-serif"],
         mono: ["DM Mono", "monospace"]
       },
