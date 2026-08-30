@@ -86,10 +86,10 @@ if ('IntersectionObserver' in window) {
   revealEls.forEach((el) => el.classList.add('is-visible'));
 }
 
-/* --- Video Autoplay on Intersection --- */
-const videos = document.querySelectorAll('.device-screen video');
+/* --- Video Autoplay on Intersection (hero device) --- */
+const heroVideos = document.querySelectorAll('.device-screen video');
 
-if ('IntersectionObserver' in window && videos.length) {
+if ('IntersectionObserver' in window && heroVideos.length) {
   const videoObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -103,5 +103,30 @@ if ('IntersectionObserver' in window && videos.length) {
     { threshold: 0.3 }
   );
 
-  videos.forEach((v) => videoObserver.observe(v));
+  heroVideos.forEach((v) => videoObserver.observe(v));
 }
+
+/* --- Project Card Video Preview (hover) --- */
+const projectCards = document.querySelectorAll('.project-card[data-project]');
+
+projectCards.forEach((card) => {
+  const video = card.querySelector('.project-video');
+  if (!video) return;
+
+  let hoverTimeout;
+
+  card.addEventListener('mouseenter', () => {
+    clearTimeout(hoverTimeout);
+    card.classList.add('is-hovered');
+    video.currentTime = 0;
+    video.play().catch(() => {});
+  });
+
+  card.addEventListener('mouseleave', () => {
+    hoverTimeout = setTimeout(() => {
+      video.pause();
+      video.currentTime = 0;
+      card.classList.remove('is-hovered');
+    }, 200);
+  });
+});

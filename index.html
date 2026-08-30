@@ -7,13 +7,13 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="TIXAR — Technology Innovation Texar">
   <meta property="og:description" content="IT Club SMK TEXAR.">
-  <meta property="og:image" content="/public/assets/icons/tixar-logo-og.png">
+  <meta property="og:image" content="/public/assets/icons/tixar-logo.jfif">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="1200">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="TIXAR — Technology Innovation Texar">
   <meta name="twitter:description" content="Ekstrakurikuler pemrograman dan desain digital di SMK Texar.">
-  <meta name="twitter:image" content="/public/assets/icons/tixar-logo-og.png">
+  <meta name="twitter:image" content="/public/assets/icons/tixar-logo.jfif">
   <title>TIXAR — Technology Innovation Texar</title>
   <link rel="icon" href="public/assets/icons/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -27,7 +27,7 @@
       </a>
       <div class="nav-links"><a href="#karya">Karya</a><a href="#belajar">Kegiatan</a><a href="#faq">FAQ</a></div>
       <div class="nav-right">
-        <a class="nav-cta" href="https://bit.ly/join-tixar" target="_blank" rel="noopener">Gabung</a>
+        <a class="nav-cta" href="" target="_blank" rel="noopener">Gabung</a>
         <button class="nav-hamburger" aria-label="Buka menu" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
@@ -44,7 +44,7 @@
     <a href="#karya">Karya</a>
     <a href="#belajar">Kegiatan</a>
     <a href="#faq">FAQ</a>
-    <a class="nav-cta" href="https://bit.ly/join-tixar" target="_blank" rel="noopener">Gabung sekarang!</a>
+    <a class="nav-cta" href="" target="_blank" rel="noopener">Gabung sekarang!</a>
   </div>
 
   <main id="beranda">
@@ -87,31 +87,37 @@
         <p class="reveal reveal-delay-2">Proyek latihan terasa lebih berguna saat punya pengguna dan masalah yang jelas.</p>
       </div>
       <div class="projects">
-        <a href="https://perpustakaan.texaslearning.org" target="_blank" rel="noopener" class="project-card reveal">
+        <a  target="_blank" rel="noopener" class="project-card reveal" data-project="perpustakaan">
           <article class="project project-featured">
-            <div class="project-image"><img src="public/assets/images/perpustakaan.svg" alt="Tampilan proyek Perpustakaan"></div>
+            <div class="project-image">
+              <img src="public/assets/images/perpustakaan.svg" alt="Tampilan proyek Perpustakaan">
+              <video class="project-video" muted loop playsinline preload="none" poster="public/assets/images/perpustakaan.svg">
+                <source src="public/assets/videos/perpustakaan.mp4" type="video/mp4">
+              </video>
+              <div class="project-video-badge"><span class="badge-dot"></span> demo</div>
+            </div>
             <div class="project-copy"><p>01 — WEB APP</p><h3>Perpustakaan</h3><span>Akses koleksi sekolah, lebih gampang.</span><span class="project-arrow">Kunjungi →</span></div>
           </article>
         </a>
-        <a href="https://texality.texaslearning.org" target="_blank" rel="noopener" class="project-card reveal">
+        <a target="_blank" rel="noopener" class="project-card reveal">
           <article class="project">
             <div class="project-image"><img src="public/assets/images/texality.jpg" alt="Tampilan proyek Texality"></div>
             <div class="project-copy"><p>02 — PLATFORM</p><h3>Texality</h3><span>Ruang digital untuk aktivitas sekolah.</span><span class="project-arrow">Kunjungi →</span></div>
           </article>
         </a>
-        <a href="https://texaslearning.org" target="_blank" rel="noopener" class="project-card reveal">
+        <a target="_blank" rel="noopener" class="project-card reveal">
           <article class="project">
             <div class="project-image"><img src="public/assets/images/texaslearning.jpg" alt="Tampilan proyek Texaslearning"></div>
             <div class="project-copy"><p>03 — LEARNING</p><h3>Texaslearning</h3><span>Materi sekolah dalam alur yang jelas.</span><span class="project-arrow">Kunjungi →</span></div>
           </article>
         </a>
-        <a href="https://texasvoice.texaslearning.org" target="_blank" rel="noopener" class="project-card reveal">
+        <a target="_blank" rel="noopener" class="project-card reveal">
           <article class="project">
             <div class="project-image"><img src="public/assets/images/texasvoice.svg" alt="Tampilan proyek Texasvoice"></div>
             <div class="project-copy"><p>04 — VOTING</p><h3>Texasvoice</h3><span>Suara siswa, dalam satu tempat.</span><span class="project-arrow">Kunjungi →</span></div>
           </article>
         </a>
-        <a href="https://pilketos.rizkymaulana.cloud" target="_blank" rel="noopener" class="project-card reveal">
+        <a target="_blank" rel="noopener" class="project-card reveal">
           <article class="project">
             <div class="project-image"><img src="public/assets/images/pilketos.png" alt="Tampilan proyek Pilketos"></div>
             <div class="project-copy"><p>05 — EVENT</p><h3>Pilketos</h3><span>Informasi pemilihan yang mudah dibaca.</span><span class="project-arrow">Kunjungi →</span></div>
@@ -174,7 +180,7 @@
         </div>
         <div class="faq reveal reveal-delay-2">
           <button aria-expanded="false">Bagaimana cara mendaftar?<span aria-hidden="true">+</span></button>
-          <div class="faq-answer"><p>Kamu bisa langsung daftar lewat <a href="https://bit.ly/join-tixar" target="_blank" rel="noopener" style="color:hsl(var(--color-ice));text-decoration:underline;">bit.ly/join-tixar</a> atau datang langsung ke ruangan saat hari kegiatan.</p></div>
+          <div class="faq-answer"><p>Kamu bisa langsung daftar lewat link ini <a href="" target="_blank" rel="noopener" style="color:hsl(var(--color-ice));text-decoration:underline;">bit.ly/join-tixar</a> tetapi sudah tutup ya form nya, atau datang langsung ke ruangan saat hari kegiatan.</p></div>
         </div>
       </div>
     </section>
@@ -183,9 +189,9 @@
       <div class="shell join-inner">
         <p class="kicker reveal">Pendaftaran anggota</p>
         <h2 class="reveal reveal-delay-1">Ada ide yang ingin kamu coba?</h2>
-        <p class="reveal reveal-delay-2">Langsung daftar atau temui pengurus TIXAR di sekolah untuk info lebih lanjut.</p>
+        <p class="reveal reveal-delay-2">Langsung daftar atau temui pengurus TIXAR untuk info lebih lanjut.</p>
         <div class="join-cta-row reveal reveal-delay-3">
-          <a class="button button-solid" href="https://bit.ly/join-tixar" target="_blank" rel="noopener">Daftar sekarang <span aria-hidden="true">→</span></a>
+        <a class="button button-solid" href="https://bit.ly/join-tixar" target="_blank" rel="noopener">Gabung sekarang <span aria-hidden="true">→</span>
           <a class="button-outline" href="#beranda">Kembali ke atas <span aria-hidden="true">↑</span></a>
         </div>
       </div>
@@ -196,7 +202,7 @@
     <div class="shell">
       <div class="footer-top">
         <div>
-          <span class="wordmark">Tix<span class="wm-magenta">ar</span><span class="wm-yellow">.</span></span>
+           <span class="logo-text"><span class="l-lt">&lt;</span><span class="l-slash">/</span><span class="l-gt">&gt;</span><span class="l-cyan">Tix</span><span class="l-magenta">ar</span><span class="l-yellow">.</span></span>
           <p>Technology Innovation Texar</p>
         </div>
         <div class="footer-links">
@@ -207,7 +213,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 TIXAR — SMK Texar. All rights reserved.</p>
+        <p>© 2026 TIXAR — SMK Texar. All rights reserved.</p>
       </div>
     </div>
   </footer>
