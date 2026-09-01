@@ -86,6 +86,17 @@ if ('IntersectionObserver' in window) {
   revealEls.forEach((el) => el.classList.add('is-visible'));
 }
 
+/* --- Lazy Load Video Sources --- */
+function loadVideoSources(video) {
+  if (video.dataset.loaded) return;
+  const sources = video.querySelectorAll('source[data-src]');
+  sources.forEach((source) => {
+    source.src = source.dataset.src;
+  });
+  video.dataset.loaded = 'true';
+  video.load();
+}
+
 /* --- Video Autoplay on Intersection (hero device) --- */
 const heroVideos = document.querySelectorAll('.device-screen video');
 
@@ -94,6 +105,7 @@ if ('IntersectionObserver' in window && heroVideos.length) {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          loadVideoSources(entry.target);
           entry.target.play().catch(() => {});
         } else {
           entry.target.pause();
@@ -117,6 +129,7 @@ projectCards.forEach((card) => {
 
   card.addEventListener('mouseenter', () => {
     clearTimeout(hoverTimeout);
+    loadVideoSources(video);
     card.classList.add('is-hovered');
     video.currentTime = 0;
     video.play().catch(() => {});
